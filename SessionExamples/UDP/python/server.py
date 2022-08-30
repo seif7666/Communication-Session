@@ -9,7 +9,6 @@ sock = sk.socket(sk.AF_INET,  sk.SOCK_DGRAM)
 sock.bind((SERVER_IP, SERVER_PORT))
 
 duration = 1  # seconds
-
 print('Server listening...')
 while True:
     data, addr = sock.recvfrom(1024) 

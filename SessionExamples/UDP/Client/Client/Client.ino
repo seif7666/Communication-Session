@@ -27,9 +27,6 @@ void loop() {
         int success;
 
         success = udp.beginPacket(IPAddress(192, 168, 1, 10), 5000);
-        //beginPacket fails if remote ethaddr is unknown. In this case an
-        //arp-request is send out first and beginPacket succeeds as soon
-        //the arp-response is received.
         if(!success){
           Serial.println("Can't locate address!");
           return;

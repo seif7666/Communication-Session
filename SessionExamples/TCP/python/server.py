@@ -1,4 +1,3 @@
-from email import message
 import socket as sk
 
 server_port= 100

@@ -1,7 +1,6 @@
 import socket as sk
 import os
 
-
 SERVER_IP = input('Enter server IP address: ')
 SERVER_PORT = int(input('Enter Server port: '))
 sock= sk.socket(sk.AF_INET, sk.SOCK_DGRAM)
